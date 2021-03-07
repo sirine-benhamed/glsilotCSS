@@ -3,68 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="test1.css" <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
 </head>
 
 <body>
-    <h2>Inscription en licence</h2>
-    <fieldset>
-        <legend>Informations personnelles</legend>
-        <form>
-            <div>
-                <libel for="nom">Votre nom</libel>
-                <input type="text" id="nom" size="30" maxlength="20" placeholder="votre nom?">
+    <h2 id="inf">Inscription en licence</h2>
+    <form>
+        <fieldset>
+            <legend id="info">Informations personnelles</legend>
+            <div class="ct">
+                <div>
+                    <libel for="nom">Votre nom</libel>
+                    <input type="text" id="nom" size="30" maxlength="20" placeholder="votre nom?">
+                </div>
+                <div>
+                    <libel for="prenom">Votre prénom</libel>
+                    <input type="text" id="prenom" size="30" maxlength="20" placeholder="Votre prénom?">
+                </div>
+                <div>
+                    <libel for="age">Votre age</libel>
+                    <input type="text" id="age" size="30" maxlength="20" placeholder="votre age?">
+                </div>
+                <div>
+                    <libel for="adr">Votre adresse</libel>
+                    <textarea name="adresse" cols="50" rows="10" id="adr" placeholder="Votre adresse?"></textarea>
+                </div>
+                <div>
+                    <label for="mdp">Mot de passe</label>
+                    <input type="password" id="mdp">
+                </div>
+                <div>
+                    <label for="mdp">Retapez votre mot de passe</label>
+                    <input type="password" id="mdp">
+                </div>
             </div>
-            <div>
-                <libel for="prenom">Votre prénom</libel>
-                <input type="text" id="prenom" size="30" maxlength="20" placeholder="Votre prénom?">
-            </div>
-            <div>
-                <libel for="age">Votre age</libel>
-                <input type="text" id="age" size="30" maxlength="20" placeholder="votre age?">
-            </div>
-            <div>
-                <libel for="adr">Votre adresse</libel>
-                <textarea name="adresse" cols="30" rows="20" id="adr" placeholder="Votre adresse?"></textarea>
-            </div>
-            <div>
-                <label for="mdp">Mot de passe</label>
-                <input type="password" id="mdp">
-            </div>
-            <div>
-                <label for="mdp">Retapez votre mot de passe</label>
-                <input type="password" id="mdp">
-            </div>
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Gestion des groupes et des options</legend>
-    <div>
-        <label for="grp">Votre groupe:</label>
-        <input type="radio" name="groupe" value="Grp1" id="grp">groupe1
-        <input type="radio" name="groupe" value="Grp2" id="grp">groupe2
-        <input type="radio" name="groupe" value="Grp3" id="grp">groupe3
-    </div>
-    <div>
-        <label for="cetud">Numéro de carte d'etudiant</label>
-        <input type="text" size="20" maxlength="30" id="Cetud" placeholder="Numéro de carte d'etudiant?">
+        </fieldset>
+        <fieldset>
+            <legend id="ctr">Gestion des groupes et des options</legend>
+            <div class="left">
+                <div>
+                    <label for="grp">Votre groupe:</label>
+                    <input type="radio" name="groupe" value="Grp1" id="grp">groupe1
+                    <input type="radio" name="groupe" value="Grp2" id="grp">groupe2
+                    <input type="radio" name="groupe" value="Grp3" id="grp">groupe3
+                </div>
+                <div>
+                    <label for="cetud">Numéro de carte d'etudiant</label>
+                    <input type="text" size="20" maxlength="30" id="Cetud" placeholder="Numéro de carte d'etudiant?">
 
-    </div>
-    <div>
-        <label for="opt">Choisissez les options que vous désirez</label>
-        <select name="option" size="5">
-            <option value="j2ee" id="opt">J2ee
-            <option value="android" id="opt">Android
-            <option value=".net" id="opt">.Net
-            <option value="html5" id="opt">Html5
-            <option value="flex" id="opt">Flex
-        </select>
-    </div>
-</fieldset>
-<input type="submit" value="valider">
-<input type="reset"
+                </div>
+                <div>
+                    <label for="opt">Choisissez les options que vous désirez</label>
+                    <select name="option" size="5">
+                        <option value="j2ee" id="opt">J2ee
+                        <option value="android" id="opt">Android
+                        <option value=".net" id="opt">.Net
+                        <option value="html5" id="opt">Html5
+                        <option value="flex" id="opt">Flex
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <div class="ctre">
+            <input type="submit" value="valider">
+            <input type="reset">
+        </div>
+    </form>
 </body>
 
 </html>
