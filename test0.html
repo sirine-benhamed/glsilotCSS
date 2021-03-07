@@ -39,6 +39,8 @@
             </div>
         </form>
     </fieldset>
+    <fieldset>
+        <legend>Gestion des groupes et des options</legend>
     <div>
         <label for="grp">Votre groupe:</label>
         <input type="radio" name="groupe" value="Grp1" id="grp">groupe1
@@ -51,15 +53,18 @@
 
     </div>
     <div>
-        <select name="option">
-            <option value="j2ee">J2ee
-            <option value="android">Android
-            <option value=".net">.Net
-            <option value="html5">Html5
-            <option value="flex">Flex
+        <label for="opt">Choisissez les options que vous désirez</label>
+        <select name="option" size="5">
+            <option value="j2ee" id="opt">J2ee
+            <option value="android" id="opt">Android
+            <option value=".net" id="opt">.Net
+            <option value="html5" id="opt">Html5
+            <option value="flex" id="opt">Flex
         </select>
     </div>
-
+</fieldset>
+<input type="submit" value="valider">
+<input type="reset"
 </body>
 
 </html>
