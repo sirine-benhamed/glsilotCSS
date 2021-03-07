@@ -25,3 +25,9 @@ div.left {
     #Titre{
         text-align: center;
     }
+    #v{
+        text-align: center;
+    }
+    #h{
+        border: 8px black solid ;
+    }
